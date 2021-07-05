@@ -22,7 +22,7 @@ cd "$PARENT_PATH"
 docker build -t "${PROJECT_NAME}":"${PARENT_NAME}" -f Dockerfile .
 
 # 构建容器
-docker run -d --restart=always -p 31030:31030 -v "${SOURCE_CODE_PATH}":/var/www/html --name "${PROJECT_NAME}" "${PROJECT_NAME}":"${PARENT_NAME}" /start.sh
+docker run -d --restart=always -p 31040:31040 -v "${SOURCE_CODE_PATH}":/var/www/html --name "${PROJECT_NAME}" "${PROJECT_NAME}":"${PARENT_NAME}" /start.sh
 
 echo ""
 echo "---------- no shit ----------"

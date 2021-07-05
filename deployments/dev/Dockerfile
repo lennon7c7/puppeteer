@@ -14,6 +14,6 @@ WORKDIR /var/www/html
 # npm换源
 RUN npm config set registry https://registry.npm.taobao.org
 
-EXPOSE 31030
+EXPOSE 31040
 
 CMD ["/start.sh"]
